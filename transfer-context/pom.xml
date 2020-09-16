@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>transfer</artifactId>
+        <groupId>com.yellow.pepper</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>transfer-context</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>transfer-context</name>
+    <description>Transfer Context</description>
+
+    <properties>
+        <java.version>11</java.version>
+        <command-bus-cdi-version>1.0.1</command-bus-cdi-version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.cloudogu.cb</groupId>
+            <artifactId>command-bus-cdi</artifactId>
+            <version>${command-bus-cdi-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudogu.cb</groupId>
+            <artifactId>command-bus-spring</artifactId>
+            <version>${command-bus-cdi-version}</version>
+        </dependency>
+    </dependencies>
+</project>
